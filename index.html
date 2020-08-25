@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flexslider/flexslider.css"> <!-- Slide-->
+    <link rel="stylesheet" href="MagnificPopup/magnific-popup.css"> <!-- Popup-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <label>ITGenius Studio</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features  <i class="fas fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Other <i class="fas fa-caret-right"></i></a>
+                        <ul>
+                            <li><a href="#">Developer</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slide Show Image-->
+    <div class="slideshow">
+
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                <img src="images/room.jpg" />
+                </li>
+                <li>
+                <img src="images/room2.jpg" />
+                </li>
+                <li>
+                <img src="images/room3.jpg" />
+                </li>
+                <li>
+                <img src="images/room4.jpg" />
+                </li>
+            </ul>
+            </div>
+
+        <a href="#"><i class="fas fa-chevron-down"></i></a>
+    </div>
+
+    <!--Image Gallery-->
+    <h1>Portfolio Project</h1>
+    <div class="gallery">
+        <div class="row">
+            <div class="col">
+                <a class="popup" href="images/gallery/1.png"><img src="images/gallery/1.png"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/2.png"><img src="images/gallery/2.png"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/3.jpg"><img src="images/gallery/3.jpg"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/4.jpg"><img src="images/gallery/4.jpg"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/5.jpg"><img src="images/gallery/5.jpg"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/6.png"><img src="images/gallery/6.png"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/7.jpg"><img src="images/gallery/7.jpg"></a>
+            </div>
+            <div class="col">
+                <a class="popup" href="images/gallery/8.jpg"><img src="images/gallery/8.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            &copy;CopyRight 2020-2021 ITGenius.co.th
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d07b7f627c.js" crossorigin="anonymous"></script><script src="flexslider/jquery.flexslider.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="flexslider/jquery.flexslider.js"></script>
+    <script src="MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(window).load(function() {
+            // Slide
+            $('.flexslider').flexslider({
+                animation: "slide", // fade , slide
+                slideshowSpeed: 3000,
+                direction: "horizontal" // horizontal, vertical
+            });
+            // Popup
+            $('.popup').magnificPopup({
+                type: 'image',
+                // other options
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true
+                },
+            });
+        });
+    </script>
+    
+</body>
+</html>
